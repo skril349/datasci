@@ -2,6 +2,8 @@ import argparse
 import file_processing
 import data_processing
 import filter_data
+import graphics
+
 def main():
     parser = argparse.ArgumentParser(description="TMDB Data Processing Script")
     parser.add_argument('--extract', action='store_true', help='Extract zip file')
@@ -12,6 +14,7 @@ def main():
     parser.add_argument('--english_series', action='store_true', help='English series')
     parser.add_argument('--startandcancelled_series', action='store_true', help='Series started in 2023 and canceled')
     parser.add_argument('--japanese_series', action='store_true', help='Japanese series')
+    parser.add_argument('--bar_chart', action='store_true', help='graphic bars')
 
     args = parser.parse_args()
 
@@ -64,8 +67,19 @@ def main():
         japanese_series = filter_data.get_series_by_language(merged_df, 'ja')
         print("Japanese series:\\n", japanese_series.head(20))
 
+    ''' EXERCICI 4 '''
+
+    if args.bar_chart:
+        merged_df = file_processing.read_and_merge_csv_pandas(csv_files)
+        year_counts = graphics.series_per_start_year(merged_df)
+        # plt.figure(figsize=(10, 6))
+        # year_counts.plot(kind='bar')
+        # plt.title('Nombre de sèries per any d\'inici')
+        # plt.xlabel('Any')
+        # plt.ylabel('Nombre de sèries')
+        # plt.show()
     # If no arguments are provided, execute all the functions
-    if not (args.extract or args.merge_pandas or args.merge_dict or args.air_days or args.series_dict or args.english_series or args.startandcancelled_series or args.japanese_series):
+    if not (args.extract or args.merge_pandas or args.merge_dict or args.air_days or args.series_dict or args.english_series or args.startandcancelled_series or args.japanese_series or args.bar_chart):
         # Extract files
         zip_path = 'data/TMDB.zip'
         extracting_folder = 'data/'
@@ -101,6 +115,10 @@ def main():
         #Japanese series
         japanese_series = filter_data.get_series_by_language(merged_df, 'ja')
         print("Japanese series:\\n", japanese_series.head(20))
+
+        # Graphics 
+        year_counts = graphics.series_per_start_year(merged_df)
+        
 
         pass
 

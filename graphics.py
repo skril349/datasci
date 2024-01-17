@@ -29,7 +29,6 @@ def series_per_type_and_decade(merged_df):
     plt.legend(title='Tipus')
     plt.savefig('graphics/series_per_decade.png')  # Guarda el gràfic en un fitxer
     print("saved file by decade as /graphics/series_per_decade.png ")
-    return type_decade_counts
 
 # EXERCICI 4.3: Nombre de sèries per gènere
 def series_per_genre(merged_df):
@@ -37,4 +36,9 @@ def series_per_genre(merged_df):
     total = genre_counts.sum()
     genre_counts = genre_counts[genre_counts / total >= 0.01]
     genre_counts['Other'] = total - genre_counts.sum()
-    return genre_counts
+    plt.figure(figsize=(10, 6))
+    genre_counts.plot(kind='pie', autopct='%1.1f%%', startangle=140)
+    plt.title('Percentatge de sèries per gènere')
+    plt.ylabel('')
+    plt.savefig('graphics/series_per_genre.png')  # Guarda el gràfic en un fitxer
+    print("saved file by genre as /graphics/series_per_genre.png ")

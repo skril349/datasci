@@ -30,13 +30,25 @@ Per executar el script `main.py`, podeu utilitzar diferents arguments de línia 
     ```
     python main.py --merge_dict
     ```
-- **`--air_days`**: Només executa la funció de calcular els 10 dies amb mes emisions.
+- **`--air_days`**: Només executa la funció de calcular les 10 series amb mes dies d'emissió.
     ```
     python main.py --air_days
     ```
 - **`--series_dict`**: Només executa la funció de mostrar un diccionari amb les 5 series i els seus posters.
     ```
     python main.py --series_dict
+    ```
+- **`--english_series`**: Només executa la funció de mostrar les series en angles amb "overview" de misteri o crim.
+    ```
+    python main.py --english_series
+    ```
+- **`--startandcancelled_series`**: Només executa la funció de mostrar les series iniciades i cancelades en 2023.
+    ```
+    python main.py --startandcancelled_series
+    ```
+- **`--japanese_series`**: Només executa la funció de mostrar el dataframe amb les series japoneses.
+    ```
+    python main.py --japanese_series
     ```
 ## Resposta a l'Exercici 4
 

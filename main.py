@@ -15,6 +15,7 @@ def main():
     parser.add_argument('--startandcancelled_series', action='store_true', help='Series started in 2023 and canceled')
     parser.add_argument('--japanese_series', action='store_true', help='Japanese series')
     parser.add_argument('--bar_chart', action='store_true', help='graphic bars')
+    parser.add_argument('--decade_count', action='store_true', help='graphic bars decade counts')
 
     args = parser.parse_args()
 
@@ -71,15 +72,14 @@ def main():
 
     if args.bar_chart:
         merged_df = file_processing.read_and_merge_csv_pandas(csv_files)
-        year_counts = graphics.series_per_start_year(merged_df)
-        # plt.figure(figsize=(10, 6))
-        # year_counts.plot(kind='bar')
-        # plt.title('Nombre de sèries per any d\'inici')
-        # plt.xlabel('Any')
-        # plt.ylabel('Nombre de sèries')
-        # plt.show()
+        graphics.series_per_start_year(merged_df)
+    
+    if args.decade_count:
+        merged_df = file_processing.read_and_merge_csv_pandas(csv_files)
+        graphics.series_per_type_and_decade(merged_df)
+       
     # If no arguments are provided, execute all the functions
-    if not (args.extract or args.merge_pandas or args.merge_dict or args.air_days or args.series_dict or args.english_series or args.startandcancelled_series or args.japanese_series or args.bar_chart):
+    if not (args.extract or args.merge_pandas or args.merge_dict or args.air_days or args.series_dict or args.english_series or args.startandcancelled_series or args.japanese_series or args.bar_chart or args.decade_count):
         # Extract files
         zip_path = 'data/TMDB.zip'
         extracting_folder = 'data/'
@@ -117,8 +117,9 @@ def main():
         print("Japanese series:\\n", japanese_series.head(20))
 
         # Graphics 
-        year_counts = graphics.series_per_start_year(merged_df)
-        
+        graphics.series_per_start_year(merged_df)
+        graphics.series_per_type_and_decade(merged_df)
+
 
         pass
 

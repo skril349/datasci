@@ -50,7 +50,7 @@ Per executar el script `main.py`, podeu utilitzar diferents arguments de línia 
     ```
     python main.py --japanese_series
     ```
-## Resposta a l'Exercici 4
+## Resposta a l'Exercici 1.4
 
 **Comparació entre la Fusió amb Pandas i en un Diccionari:**
 

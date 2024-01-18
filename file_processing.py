@@ -7,7 +7,7 @@ import csv
 from collections import defaultdict
 import time
 
-def extract_file(file_path, extract_to_folder):
+def extract_file(file_path: list, extract_to_folder:str):
     """
     Extracts a zip file to the specified folder.
 
@@ -33,7 +33,7 @@ def extract_file(file_path, extract_to_folder):
     end_time = time.time()
     print(f"Extraction Time: {end_time - start_time} seconds")
 
-def read_and_merge_csv_pandas(file_paths, key_column='id'):
+def read_and_merge_csv_pandas(file_paths: pd.DataFrame, key_column:str='id'):
 
     """
     Read and merge all csv by id to create pandas dataframe.
@@ -57,7 +57,7 @@ def read_and_merge_csv_pandas(file_paths, key_column='id'):
     print(f"CSV Merge (Pandas) Time: {end_time - start_time} seconds")
     return merged_df
 
-def read_and_merge_csv_dict(file_paths, key_column='id'):
+def read_and_merge_csv_dict(file_paths: pd.DataFrame, key_column:str='id'):
 
     """
     Read and merge all csv by id to create dictionary.

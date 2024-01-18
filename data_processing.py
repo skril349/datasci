@@ -5,9 +5,9 @@ from datetime import datetime
 from collections import OrderedDict
 
 # Exercici 2.1: Calculate air days and display top 10 series by air days
-def calculate_air_days(df):
+def calculate_air_days(df:pd.DataFrame):
 
-     """
+    """
     Calculate the number of days each series was on air.
 
     This function adds a new column 'air_days' to the DataFrame, representing
@@ -28,9 +28,9 @@ def calculate_air_days(df):
 
 
 # Exercici 2.2: Create a dictionary for series names and complete web address of their poster
-def create_series_poster_dict(df):
+def create_series_poster_dict(df: pd.DataFrame):
 
-     """
+    """
     Create an ordered dictionary whose key will be the name of the 
     series (name) and whose value will be the full web address of 
     your poster (homepage and poster_path). If homepage or

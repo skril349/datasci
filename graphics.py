@@ -1,8 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-/mnt/c/Users/tvive/Documents/UOC/programació_per_la_ciència_de_dades/PAC6/datasci_pac4/data
+
 # EXERCICI 4.1: Nombre de sèries per any d'inici
-def series_per_start_year(merged_df):
+def series_per_start_year(merged_df: pd.DataFrame):
 
     """
     Generates a bar chart showing the number of series per start year.
@@ -25,7 +25,7 @@ def series_per_start_year(merged_df):
     print("saved file by year as /graphics/series_per_year.png ")
 
 # EXERCICI 4.2: Nombre de sèries de cada "type" per dècada
-def series_per_type_and_decade(merged_df):
+def series_per_type_and_decade(merged_df: pd.DataFrame):
 
     """
     Generates a line chart showing the number of series per decade.
@@ -50,7 +50,7 @@ def series_per_type_and_decade(merged_df):
     print("saved file by decade as /graphics/series_per_decade.png ")
 
 # EXERCICI 4.3: Nombre de sèries per gènere
-def series_per_genre(merged_df):
+def series_per_genre(merged_df: pd.DataFrame):
 
     """
     Obtaining the number of series by genre showing 

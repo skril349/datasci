@@ -2,6 +2,15 @@
 
 Aquest projecte conté scripts de Python per processar i analitzar dades de The Movie Database (TMDB). Inclou funcionalitats per a descomprimir fitxers, llegir dades de fitxers CSV, i fusionar-les utilitzant diferents mètodes.
 
+El projecte està dividit de la següent manera:
+
+- `graphics` conté les funcions per poder plotejar.
+- `filter_data` conté les funcions per poder filtrar informació.
+- `file_processing` conté les funcions per processar els fitxers csv.
+- `data_procesing`conté les funcions per processar el dataframe.
+- `main` is the main file, and the one that should be run.
+
+
 ## Funcionalitats
 
 El script principal `main.py` pot executar les següents tasques:
@@ -13,6 +22,17 @@ El script principal `main.py` pot executar les següents tasques:
 ## Com Utilitzar
 
 Per executar el script `main.py`, podeu utilitzar diferents arguments de línia de comandes per executar tasques específiques:
+
+Es pot crear un entorn virtual si es vol:
+```
+virtualenv venv
+```
+
+Posteriorment instalarem els requeriments necessaris:
+```
+pip install -r requirements.txt
+```
+L'execució del codi es pot fer de dues maneres, sense arguments o amb arguments:
 
 - **Sense Arguments**: Executa totes les funcions per defecte.
     ```

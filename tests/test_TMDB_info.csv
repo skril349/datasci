@@ -1,0 +1,51 @@
+id,name,number_of_seasons,number_of_episodes,original_language,languages,spoken_languages,episode_run_time,vote_count,vote_average,popularity,first_air_date,last_air_date,adult,in_production,type,status
+1399,Game of Thrones,8,73,en,en,English,0,21857,8.442,1083.917,2011-04-17,2019-05-19,False,False,Scripted,Ended
+71446,Money Heist,3,41,es,es,Español,70,17836,8.257,96.354,2017-05-02,2021-12-03,False,False,Scripted,Ended
+66732,Stranger Things,4,34,en,en,English,0,16161,8.624,185.711,2016-07-15,2022-07-01,False,True,Scripted,Returning Series
+1402,The Walking Dead,11,177,en,en,English,42,15432,8.121,489.746,2010-10-31,2022-11-20,False,False,Scripted,Ended
+63174,Lucifer,6,93,en,en,English,45,13870,8.486,416.668,2016-01-25,2021-09-10,False,False,Scripted,Ended
+69050,Riverdale,7,137,en,en,English,45,13180,8.479,143.75,2017-01-26,2023-08-23,False,False,Scripted,Ended
+93405,Squid Game,2,9,ko,"en, ko, ur","English, 한국어/조선말, اردو",0,13053,7.831,115.587,2021-09-17,2021-09-17,False,True,Scripted,Returning Series
+1396,Breaking Bad,5,62,en,"en, de, es","English, Deutsch, Español",0,12398,8.89,247.632,2008-01-20,2013-09-29,False,False,Scripted,Ended
+71712,The Good Doctor,6,116,en,en,English,43,11768,8.503,681.614,2017-09-25,2023-05-01,False,True,Scripted,Returning Series
+85271,WandaVision,1,9,en,en,English,0,11308,8.3,62.893,2021-01-15,2021-03-05,False,False,Miniseries,Ended
+60735,The Flash,9,184,en,en,English,44,10642,7.797,319.767,2014-10-07,2023-05-24,False,False,Scripted,Ended
+1418,The Big Bang Theory,12,279,en,en,English,22,10322,7.879,344.121,2007-09-24,2019-05-16,False,False,Scripted,Ended
+84958,Loki,2,12,en,en,English,52,10136,8.2,276.759,2021-06-09,2021-07-14,False,True,Scripted,Returning Series
+1416,Grey's Anatomy,19,419,en,en,English,43,9512,8.253,1647.218,2005-03-27,2023-05-18,False,True,Scripted,Returning Series
+82856,The Mandalorian,3,24,en,en,English,0,9353,8.5,154.48,2019-11-12,2023-04-19,False,True,Scripted,Returning Series
+456,The Simpsons,35,762,en,en,English,22,9136,7.999,439.488,1989-12-17,2023-10-01,False,True,Scripted,Returning Series
+85552,Euphoria,2,16,en,en,English,60,9008,8.353,197.456,2019-06-16,2022-02-27,False,True,Scripted,Returning Series
+75006,The Umbrella Academy,4,32,en,en,English,0,8891,8.604,51.859,2019-02-15,2022-06-22,False,True,Scripted,Returning Series
+60574,Peaky Blinders,6,36,en,en,English,58,8836,8.546,344.477,2013-09-12,2022-04-03,False,False,Scripted,Ended
+76669,Elite,7,49,es,es,Español,50,8817,8.071,100.711,2018-10-05,2022-11-18,False,True,Scripted,Returning Series
+76479,The Boys,4,32,en,en,English,60,8721,8.474,256.856,2019-07-25,2022-07-07,False,True,Scripted,Returning Series
+60625,Rick and Morty,7,71,en,en,English,22,8595,8.7,429.047,2013-12-02,2022-12-11,False,True,Scripted,Returning Series
+18165,The Vampire Diaries,8,171,en,en,English,43,8356,8.337,633.313,2009-09-10,2017-03-10,False,False,Scripted,Ended
+88396,The Falcon and the Winter Soldier,1,6,en,en,English,50,8008,7.693,35.521,2021-03-19,2021-04-23,False,False,Miniseries,Ended
+31910,Naruto Shippūden,20,500,ja,ja,日本語,25,7712,8.6,128.823,2007-02-15,2017-03-23,False,False,Scripted,Ended
+48866,The 100,7,100,en,en,English,43,7666,7.916,127.224,2014-03-19,2020-09-30,False,False,Scripted,Ended
+119051,Wednesday,2,8,en,en,English,0,7506,8.548,164.275,2022-11-23,2022-11-23,False,True,Scripted,Returning Series
+1668,Friends,10,228,en,en,English,25,7192,8.444,214.333,1994-09-22,2004-05-06,False,False,Scripted,Ended
+1622,Supernatural,15,327,en,en,English,45,6909,8.304,439.934,2005-09-13,2020-11-19,False,False,Scripted,Ended
+81356,Sex Education,4,32,en,en,English,0,6647,8.304,1008.977,2019-01-11,2023-09-21,False,False,Scripted,Ended
+44217,Vikings,6,89,en,en,English,44,6385,8.086,294.196,2013-03-03,2020-12-30,False,False,Scripted,Ended
+70523,Dark,3,26,de,de,Deutsch,53,6049,8.432,86.861,2017-12-01,2020-06-27,False,False,Scripted,Ended
+1408,House,8,177,en,en,English,44,5799,8.595,239.575,2004-11-16,2012-05-21,False,False,Scripted,Ended
+77169,Cobra Kai,6,50,en,en,English,30,5734,8.22,118.256,2018-05-02,2022-09-09,False,True,Scripted,Returning Series
+85937,Demon Slayer: Kimetsu no Yaiba,5,55,ja,ja,日本語,24,5618,8.7,82.89,2019-04-06,2023-06-18,False,True,Scripted,Returning Series
+1412,Arrow,8,170,en,en,English,42,5569,6.793,174.419,2012-10-10,2020-01-28,False,False,Scripted,Ended
+1429,Attack on Titan,4,87,ja,ja,日本語,0,5492,8.657,55.416,2013-04-07,2022-04-04,False,True,Scripted,Returning Series
+87108,Chernobyl,1,5,en,en,English,0,5376,8.649,67.445,2019-05-06,2019-06-03,False,False,Miniseries,Ended
+1413,American Horror Story,12,130,en,en,English,0,5198,8.145,254.735,2011-10-05,2023-09-27,False,True,Scripted,Returning Series
+46260,Naruto,4,220,ja,ja,日本語,24,5189,8.36,135.573,2002-10-03,2007-02-08,False,False,Scripted,Ended
+71912,The Witcher,3,24,en,en,English,0,5159,8.132,240.462,2019-12-20,2023-07-27,False,True,Scripted,Returning Series
+12637,Rebelde,3,441,es,es,Español,42,5017,8.433,92.914,2004-10-04,2006-06-09,False,False,Scripted,Ended
+63247,Westworld,4,36,en,en,English,60,4948,8.075,66.988,2016-10-02,2022-08-14,False,False,Scripted,Canceled
+82883,The Act,1,8,en,en,English,53,4899,7.57,20.258,2019-03-20,2019-05-01,False,False,Scripted,Ended
+19885,Sherlock,4,12,en,en,English,90,4716,8.537,71.224,2010-07-25,2017-01-15,False,False,Scripted,Ended
+62104,The Seven Deadly Sins,4,96,ja,ja,日本語,24,4710,8.462,10.059,2014-10-05,2021-06-23,False,False,Scripted,Ended
+62715,Dragon Ball Super,1,131,ja,ja,日本語,24,4646,8.208,78.741,2015-07-05,2018-03-25,False,False,Scripted,Ended
+62286,Fear the Walking Dead,8,113,en,"en, es","English, Español",0,4591,7.693,282.366,2015-08-23,2023-06-18,False,True,Scripted,Returning Series
+2288,Prison Break,5,88,en,en,English,45,4508,8.094,213.262,2005-08-29,2017-05-30,False,False,Scripted,Ended
+65930,My Hero Academia,7,138,ja,ja,日本語,24,4496,8.673,31.82,2016-04-03,2023-03-25,False,True,Scripted,Returning Series

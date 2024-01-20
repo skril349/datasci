@@ -1,19 +1,20 @@
+""" File processing"""
 
 import zipfile
 import tarfile
-import os
-import pandas as pd
 import csv
 from collections import defaultdict
 import time
+import pandas as pd
 
-def extract_file(file_path: list, extract_to_folder:str):
+def extract_file(file_path: list, extract_to_folder: str):
     """
     Extracts a zip file to the specified folder.
 
     Parameters:
     zip_path (str): Path to the zip file to be extracted.
-    extracting_folder (str): Destination folder where the contents of the zip file will be extracted.
+    extracting_folder (str): Destination folder where the
+    contents of the zip file will be extracted.
 
     Returns:
     None
@@ -33,14 +34,13 @@ def extract_file(file_path: list, extract_to_folder:str):
     end_time = time.time()
     print(f"Extraction Time: {end_time - start_time} seconds")
 
-def read_and_merge_csv_pandas(file_paths: pd.DataFrame, key_column:str='id'):
+def read_and_merge_csv_pandas(file_paths: pd.DataFrame, key_column: str = 'id'):
 
     """
     Read and merge all csv by id to create pandas dataframe.
-
     Parameters:
     file_paths (array): csv files paths.
-    Returns: 
+    Returns:
     dataframe
 
     """
@@ -48,27 +48,24 @@ def read_and_merge_csv_pandas(file_paths: pd.DataFrame, key_column:str='id'):
     start_time = time.time()
     merged_df = pd.DataFrame()
     for file_path in file_paths:
-        df = pd.read_csv(file_path)
+        df_value = pd.read_csv(file_path)
         if merged_df.empty:
-            merged_df = df
+            merged_df = df_value
         else:
-            merged_df = pd.merge(merged_df, df, on=key_column, how='outer')
+            merged_df = pd.merge(merged_df, df_value, on=key_column, how='outer')
     end_time = time.time()
     print(f"CSV Merge (Pandas) Time: {end_time - start_time} seconds")
     return merged_df
 
-def read_and_merge_csv_dict(file_paths: pd.DataFrame, key_column:str='id'):
+def read_and_merge_csv_dict(file_paths: pd.DataFrame, key_column: str = 'id'):
 
     """
     Read and merge all csv by id to create dictionary.
-
     Parameters:
     file_paths (array): csv files paths.
-    Returns: 
+    Returns:
     dictionary
-    
     """
-
     start_time = time.time()
     merged_data = defaultdict(dict)
     for file_path in file_paths:

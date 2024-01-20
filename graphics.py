@@ -1,3 +1,4 @@
+"""Graphics file"""
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -29,10 +30,8 @@ def series_per_type_and_decade(merged_df: pd.DataFrame):
 
     """
     Generates a line chart showing the number of series per decade.
-
     Parameters:
     df (DataFrame): DataFrame containing series data with a 'first_air_date' column.
-
     Returns:
     None: Displays the generated line chart.
     """
@@ -51,20 +50,16 @@ def series_per_type_and_decade(merged_df: pd.DataFrame):
 
 # EXERCICI 4.3: Nombre de sèries per gènere
 def series_per_genre(merged_df: pd.DataFrame):
-
     """
-    Obtaining the number of series by genre showing 
-    the percentage of the total in a pie chart. 
-    Genres that represent less than 1% of the 
+    Obtaining the number of series by genre showing
+    the percentage of the total in a pie chart.
+    Genres that represent less than 1% of the
     total will be included in the "Other" category.
-
     Parameters:
     df (DataFrame): pandas dataframe.
-
     Returns:
     None: Displays the generated pie chart.
     """
-
     genre_counts = merged_df['genres'].str.split(', ').explode().value_counts()
     total = genre_counts.sum()
     genre_counts = genre_counts[genre_counts / total >= 0.01]

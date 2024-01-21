@@ -70,6 +70,16 @@ L'execució del codi es pot fer de dues maneres, sense arguments o amb arguments
     ```
     python main.py --japanese_series
     ```
+
+    
+### Tests
+The tests can be run by executing the following command from the root project:
+```
+python3 -m tests.test
+```
+
+This will crete a new folder, reports, with a summary of the results in HTML.
+
 ## Resposta a l'Exercici 1.4
 
 **Comparació entre la Fusió amb Pandas i en un Diccionari:**

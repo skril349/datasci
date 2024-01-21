@@ -73,12 +73,10 @@ L'execució del codi es pot fer de dues maneres, sense arguments o amb arguments
 
     
 ### Tests
-The tests can be run by executing the following command from the root project:
+Els tests es poden executar mitjançant el següent comandament:
 ```
 python3 -m tests.test
 ```
-
-This will crete a new folder, reports, with a summary of the results in HTML.
 
 ## Resposta a l'Exercici 1.4
 
